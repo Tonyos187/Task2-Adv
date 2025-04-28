@@ -1,0 +1,131 @@
+    .benefitsSection {
+        width: 100%;
+        padding: 0 8.4375%;
+        margin: 200px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 135px;
+    }
+    
+    .benefitsTitleContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        width: 100%;
+    }
+    
+    .benefitsContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 85px;
+    }
+    
+    .benefitCard {
+        width: 31.5789%;
+        background-color: white;
+        border: 2px solid var(--text-color3);
+        display: flex;
+        flex-direction: column;
+        box-shadow: 6px 6px 0px 2px #1E1E1E;
+        padding: 80px 50px 50px 50px;
+        border-radius: 12px;
+        position: relative;
+    }
+    
+    .benefitCardImg {
+        width: 74px;
+        height: 74px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(30px, -50%);
+        background-color: var(--bg1-color);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--text-color3);
+    }
+    
+    .benefitCardContent {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .benefitCardTitle {
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 130%;
+        letter-spacing: 0%;
+        color: var(--text-color3);
+        width: 100%;
+    }
+    
+    .benefitCardText {
+        font-family: Outfit;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        width: 100%;
+    }
+    
+    @media (max-width: 1440px) {
+        .benefitsSection {
+            margin: 150px 0;
+            gap: 108px;
+            padding: 0px 5.5555%;
+        }
+        .benefitsContainer {
+            row-gap: 68px;
+        }
+        .benefitCard {
+            width: 31.25%;
+            padding: 60px 40px 40px 40px;
+            box-shadow: 4px 4px 0px 2px #1E1E1E;
+        }
+        .benefitCardImg {
+            width: 56px;
+            height: 56px;
+        }
+        .benefitCardContent {
+            gap: 16px;
+        }
+        .benefitCardTitle {
+            font-size: 24px;
+        }
+        .benefitCardText {
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .benefitsSection {
+            margin: 80px 0;
+            gap: 78px;
+            padding: 0px 4.1025%;
+        }
+        .benefitsContainer {
+            row-gap: 68px;
+        }
+        .benefitCard {
+            width: 100%;
+            padding: 50px 40px 30px 30px;
+            box-shadow: 4px 4px 0px 1px #1E1E1E;
+        }
+        .benefitCardTitle {
+            font-size: 22px;
+        }
+        .benefitCardText {
+            font-size: 16px;
+        }
+    }

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --bg1-color: #FFDECC;
+    --bg2-color: #FFF5F0;
+    --bg3-color: #FFEFE5;
+    --bg4-color: #FFAE80;
+    --bg5-color: #FFBE99;
+    --text-color: #FF8D4D;
+    --text-color2: #FF6B00;
+    --text-color3: #262626;
+    --text-color4: #4C4C4D;
+    --text-color5: #333333;
+    --text-color6: #656567;
+    --text-color7: #1A1A1A;
+}
+
+body {
+    background-color: var(--bg2-color);
+}

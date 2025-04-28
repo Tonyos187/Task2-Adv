@@ -1,0 +1,27 @@
+.border {
+    width: 14.6818%;
+    background-color: var(--bg5-color);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 6px;
+    padding-left: 0;
+}
+
+.borderLine {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+@media (max-width: 1440px) {
+    .border {
+        width: 15%;
+    }
+}
+
+@media (max-width: 992px) {
+    .border {
+        width: 13.669%;
+    }
+}

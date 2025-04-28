@@ -1,0 +1,311 @@
+            .firstNavContainer {
+                width: 94.7916vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 14px 0;
+                position: relative;
+                left: 50%;
+                translate: -50%;
+                margin: 18px 0 14px 0;
+                background-color: var(--bg1-color);
+                border: solid 2px var(--text-color3);
+                border-radius: 8px;
+                gap: 14px;
+            }
+            
+            .text {
+                color: var(--text-color3);
+                font-size: 20px;
+                font-weight: 500;
+            }
+            
+            .navArrowContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30px;
+                height: 30px;
+            }
+            
+            .navArrow {
+                width: 18px;
+                height: 21px;
+            }
+            
+            .rightImage1,
+            .rightImage2,
+            .rightImage3 {
+                height: 100%;
+                position: absolute;
+                left: 100%;
+                translate: -100% 0;
+            }
+            
+            .leftImage1,
+            .leftImage2,
+            .leftImage3 {
+                height: 100%;
+                position: absolute;
+                left: 0;
+            }
+            
+            .leftball1,
+            .leftball2,
+            .leftball3 {
+                height: 45px;
+                position: absolute;
+                left: 28.6445%;
+                top: 0;
+            }
+            
+            .rightball1,
+            .rightball2,
+            .rightball3 {
+                height: 29px;
+                position: absolute;
+                bottom: 0;
+                right: 31.0285%;
+            }
+            
+            .leftball2,
+            .leftball3,
+            .rightball2,
+            .rightball3 {
+                display: none;
+            }
+            
+            .navContainer {
+                width: 94.7916vw;
+                background-color: white;
+                border: solid 2px var(--text-color3);
+                border-radius: 12px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: sticky;
+                top: 14px;
+                margin: 0 auto;
+                z-index: 100;
+            }
+            
+            .logoDiv {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+            }
+            
+            .logoText {
+                font-size: 22px;
+                font-weight: 500;
+            }
+            
+            .logoContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+                border-right: solid var(--text-color3) 2px;
+                background-color: var(--text-color);
+                border-top-left-radius: 12px;
+                border-bottom-left-radius: 12px;
+                padding: 20px 24px;
+            }
+            
+            .navLinksContainer2 {
+                list-style: none;
+                display: flex;
+            }
+            
+            .navLink {
+                border-left: solid 2px var(--text-color3);
+            }
+            
+            .activeNavLink {
+                background-color: var(--bg3-color);
+            }
+            
+            .navLinkText {
+                display: block;
+                text-decoration: none;
+                color: var(--text-color3);
+                height: 100%;
+                padding: 25px 34px;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 30px;
+            }
+            
+            .lastNavLinkText,
+            .hamburger {
+                background-color: var(--bg4-color);
+                border-top-right-radius: 12px;
+                border-bottom-right-radius: 12px;
+            }
+            
+            .hamburger {
+                border-left: solid 2px var(--text-color3);
+                padding: 17px 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                left: 100%;
+                translate: -100%;
+                display: none;
+            }
+            
+            .hamburgerIcon {
+                width: 28px;
+                height: 28px;
+            }
+            
+            .rightImage2,
+            .rightImage3 {
+                display: none;
+            }
+            
+            .leftImage2,
+            .leftImage3 {
+                display: none;
+            }
+            
+            @media (max-width: 1440px) {
+                .rightImage1,
+                .leftImage1,
+                .leftball1,
+                .rightball1 {
+                    display: none;
+                }
+                .rightImage2,
+                .leftImage2,
+                .leftball3,
+                .rightball3 {
+                    display: block;
+                }
+                .leftball3 {
+                    left: 293px;
+                    height: 26px;
+                }
+                .rightball3 {
+                    right: 328px;
+                    height: 17px;
+                }
+                .text {
+                    font-size: 16px;
+                }
+                .firstNavContainer {
+                    padding: 12px;
+                    border-radius: 8px;
+                    margin-top: 16px;
+                    gap: 14px;
+                }
+                .navArrowContainer {
+                    width: 24px;
+                    height: 24px;
+                }
+                .navArrow {
+                    width: 14px;
+                    height: 16px;
+                }
+                .logoContainer,
+                .navLinkText {
+                    padding: 16px 20px;
+                }
+                .navLinkText {
+                    font-size: 16px;
+                    line-height: 34px;
+                }
+                .logoDiv {
+                    width: 34px;
+                    height: 34px;
+                }
+                .logoText {
+                    font-size: 18px;
+                }
+            }
+            
+            @media (max-width: 992px) {
+                .rightImage2,
+                .leftImage2,
+                .leftball3,
+                .rightball3 {
+                    display: none;
+                }
+                .rightImage3,
+                .leftImage3,
+                .leftball2,
+                .rightball2 {
+                    display: block;
+                }
+                .text {
+                    font-size: 12px;
+                }
+                .leftball2 {
+                    left: 0;
+                    height: 19px;
+                }
+                .rightball2 {
+                    right: 0;
+                    height: 19px;
+                }
+                .navArrowContainer {
+                    width: 20px;
+                    height: 20px;
+                }
+                .firstNavContainer,
+                .navContainer {
+                    width: 91.7948%;
+                }
+                .firstNavContainer {
+                    gap: 10px;
+                    margin-top: 40px
+                }
+                .navArrow {
+                    width: 12px;
+                    height: 14px;
+                }
+                .logoDiv {
+                    width: 30px;
+                    height: 30px;
+                }
+                .logoText {
+                    font-size: 16px;
+                }
+                .navLinksContainer2 {
+                    display: none;
+                }
+                .hamburger {
+                    display: flex;
+                }
+                .showMenu {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 92.5%;
+                    height: 80vh;
+                    margin: 0 auto;
+                    position: fixed;
+                    top: 100px;
+                    left: 50%;
+                    translate: -50%;
+                    border: 2px solid var(--text-color3);
+                    border-radius: 20px;
+                    background-color: white;
+                    z-index: 100;
+                    overflow: hidden;
+                    max-height: 100%;
+                    opacity: 1;
+                }
+                .navLink {
+                    border: none;
+                    width: 100%;
+                    text-align: center;
+                }
+                .navLinkText {
+                    border-top-right-radius: 0;
+                }
+            }

@@ -1,0 +1,99 @@
+.testCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 12px;
+    padding: 50px;
+    border: 2px solid var(--text-color3);
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    gap: 30px;
+    width: 30.439%;
+    height: 100%;
+}
+
+.testCardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.testCardImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid var(--text-color5);
+    background-color: var(--bg2-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testCardName {
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.testCardDescription {
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .testCard {
+        width: 28.3333%;
+        gap: 24px;
+        padding: 40px;
+    }
+    .testCardHeader {
+        gap: 10px;
+    }
+    .testCardImage {
+        width: 66px;
+        height: 66px;
+    }
+    .testCardName {
+        font-size: 20px;
+    }
+    .testCardDescription {
+        font-size: 16px;
+    }
+    .testCardStars {
+        width: 116px;
+    }
+}
+
+@media (max-width: 992px) {
+    .testCard {
+        width: 100%;
+        gap: 20px;
+        padding: 30px;
+    }
+    .testCardHeader {
+        gap: 10px;
+    }
+    .testCardImage {
+        width: 66px;
+        height: 66px;
+    }
+    .testCardName {
+        font-size: 20px;
+    }
+    .testCardDescription {
+        font-size: 16px;
+    }
+}

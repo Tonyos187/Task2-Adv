@@ -1,0 +1,117 @@
+.faqCard {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    border: 2px solid var(--text-color3);
+    width: 100%;
+    padding: 34px 40px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg3-color);
+}
+
+.faqContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 89.8697%;
+}
+
+.faqOpen {
+    background-color: white;
+    padding: 40px;
+    align-items: start;
+}
+
+.faqHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqHeader h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.faqToggle {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    border: 2px solid var(--text-color3);
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--bg2-color);
+}
+
+.faqBorder {
+    height: 2px;
+    width: 100%;
+    background-color: var(--text-color3);
+}
+
+.faqBody {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    transition: 0.25s ease-in-out;
+}
+
+.open {
+    max-height: 300px;
+}
+
+@media (max-width: 1440px) {
+    .faqCard {
+        padding: 24px 30px;
+    }
+    .faqContainer {
+        gap: 24px;
+        width: 89.8697%;
+    }
+    .faqOpen {
+        padding: 34px 30px;
+    }
+    .faqHeader h3 {
+        font-size: 18px;
+    }
+    .faqToggle {
+        width: 32px;
+        height: 32px;
+        font-size: 24px;
+    }
+    .faqBody {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .faqCard {
+        width: 100%;
+        padding: 20px 24px;
+    }
+    .faqContainer {
+        gap: 24px;
+        width: 89.8697%;
+    }
+    .faqOpen {
+        padding: 30px 24px;
+    }
+    .faqToggle {
+        width: 32px;
+        height: 32px;
+        font-size: 24px;
+    }
+    .faqBody {
+        font-size: 16px;
+    }
+}
