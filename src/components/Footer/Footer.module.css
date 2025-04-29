@@ -24,8 +24,8 @@
         .logoContainer {
             display: flex;
             align-items: center;
-            gap: 8.31px;
-            width: 228.37px;
+            gap: 8px;
+            width: 228px;
         }
         
         .logoDiv {
@@ -37,8 +37,8 @@
         }
         
         .logo {
-            width: 41.67px;
-            height: 41.67px;
+            width: 41px;
+            height: 41px;
         }
         
         .logoText {
@@ -65,9 +65,17 @@
             display: flex;
             align-items: center;
             gap: 10px;
+        }
+        
+        .contactDivlink {
             font-size: 20px;
             font-weight: 500;
             color: var(--text-color3);
+            text-decoration: none;
+        }
+        
+        .contactDivlink:hover {
+            color: var(--bg4-color);
         }
         
         .contactDivImg {
@@ -93,35 +101,6 @@
             gap: 3.015%;
         }
         
-        .rightDivSection {
-            width: 22.7386%;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .rightDivTitle {
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 150%;
-            color: var(--text-color3);
-            margin-bottom: 24px;
-        }
-        
-        .rightDivText {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-        }
-        
-        .rightDivTextLink {
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 150%;
-            color: var(--text-color5);
-            text-decoration: none;
-            display: block;
-        }
-        
         .ContainerDiv2 {
             width: 100%;
             display: flex;
@@ -137,6 +116,7 @@
             display: flex;
             gap: 16px;
             align-items: center;
+            color: var(--text-color5);
         }
         
         .borderDiv {
@@ -185,18 +165,69 @@
             .footerContainer {
                 width: 93.0555vw;
                 margin: 150px auto 40px auto;
-            }
-            .ContainerDiv1 {
-                width: 100%;
-                display: flex;
+                padding: 80px 80px 40px 80px;
             }
             .leftDiv {
-                width: 32.5595%;
+                width: 33.3050%;
             }
-            .rightDivTextLink {
+            .logoContainer {
+                gap: 6px;
+                width: 182px;
+            }
+            .logoDiv {
+                width: 40px;
+                height: 40px;
+            }
+            .logo {
+                width: 33px;
+                height: 33px;
+            }
+            .logoText {
+                font-size: 20px;
+            }
+            .leftDivText {
                 font-size: 16px;
+                margin-top: 16px;
+                line-height: 30px;
+            }
+            .contactContainer {
+                gap: 20px;
+                margin-top: 40px;
             }
             .contactDiv {
+                gap: 8px;
+            }
+            .contactDivlink {
+                font-size: 16px;
+            }
+            .contactDivImg {
+                border: 2px solid var(--text-color3);
+                border-radius: 6px;
+                padding: 8px;
+                width: 32px;
+                height: 32px;
+            }
+            .contactImg {
+                width: 20px;
+                height: 20px;
+            }
+            .rightDiv {
+                width: 59.9152%;
+            }
+            .ContainerDiv2 {
+                padding: 20px 0;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+            .socialDivImg {
+                width: 48px;
+                height: 48px;
+            }
+            .socialImg {
+                width: 20px;
+                height: 20px;
+            }
+            .copyright {
                 font-size: 16px;
             }
         }
@@ -209,6 +240,7 @@
                 align-items: center;
                 justify-content: center;
                 padding: 60px 30px 30px 30px;
+                box-shadow: 6px 6px 0px 1px #1E1E1E;
             }
             .ContainerDiv1 {
                 width: 100%;
@@ -220,37 +252,74 @@
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
             }
             .leftDivContent {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
+            }
+            .logoDiv {
+                width: 40px;
+                height: 40px;
+            }
+            .logo {
+                width: 33px;
+                height: 33px;
+            }
+            .logoText {
+                font-size: 20px;
+            }
+            .leftDivText {
+                font-size: 16px;
                 text-align: center;
+            }
+            .contactContainer {
+                gap: 20px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                align-self: start;
+            }
+            .contactDivImg {
+                width: 32px;
+                height: 32px;
+            }
+            .contactImg {
+                width: 20px;
+                height: 20px;
             }
             .rightDiv {
                 width: 100%;
-                display: flex;
-                align-items: start;
-                justify-content: space-between;
                 flex-wrap: wrap;
-                margin-top: 40px;
-                row-gap: 50px;
-            }
-            .rightDivSection {
-                width: 44.9664%;
-                display: flex;
-                justify-content: start;
-                align-items: start;
+                justify-content: space-between;
+                row-gap: 30px;
             }
             .ContainerDiv2 {
-                display: flex;
+                padding: 16px 0;
+                margin-top: 30px;
+                margin-bottom: 16px;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                padding-top: 16px;
-                padding-bottom: 16px;
                 gap: 20px;
+            }
+            .termsDiv {
+                gap: 6px;
+                align-items: center;
+                font-size: 14px;
+                line-height: 21px;
+            }
+            .borderDiv {
+                background-color: var(--text-color3);
+                height: 21px;
+                width: 2px;
+            }
+            .socialDiv {
+                gap: 10px;
+            }
+            .socialDivImg {
+                width: 44px;
+                height: 44px;
+            }
+            .copyright {
+                font-size: 14px;
             }
         }

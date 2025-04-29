@@ -6,6 +6,7 @@ const Hero = () => {
             <div className={Styles.heroImageContainer}>
                 <img className={Styles.heroImage} src="/assets/imgs/Hero/image_2025-04-23_04-51-04.webp" alt="Hero Image" />
                 <img className={Styles.heroImage2} src="/assets/imgs/Hero/image_2025-04-23_04-51-46.webp" alt="Hero Image2" />
+
                 <Circle className={Styles.circle1} />
                 <Circle className={Styles.circle2} />
                 <Circle className={Styles.circle3} />

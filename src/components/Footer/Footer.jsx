@@ -1,3 +1,4 @@
+import FooterSection from '../FooterSection/FooterSection'
 import Styles from './Footer.module.css'
 import Logo from '/assets/icons/Logo.svg'
 const Footer = () => {
@@ -11,10 +12,38 @@ const Footer = () => {
         { imgPath: "/assets/icons/Vector.svg", link: "https://www.twitter.com/" },
         { imgPath: "/assets/icons/Vector (2).svg", link: "https://www.linkedin.com/" },
     ]
+    const links = [
+        [
+            { name: "Home", path: "#" },
+            { name: "Features", path: "#" },
+            { name: "Our Testimonials", path: "#" },
+            { name: "FAQ", path: "#" }
+        ],
+        [
+            { name: "About Us", path: "#" },
+            { name: "Our Mission", path: "#" },
+            { name: "Our Vission", path: "#" },
+            { name: "Awards and Recognitions", path: "#" },
+            { name: "History", path: "#" },
+            { name: "Teachers", path: "#" }
+        ],
+        [
+            { name: "Academics", path: "#" },
+            { name: "Special Features", path: "#" },
+            { name: "Gallery", path: "#" }
+        ],
+        [
+            { name: "Contact Us", path: "#" },
+            { name: "Information", path: "#" },
+            { name: "Map & Direction", path: "#" }
+        ]
+    ]
+
     return (
         <footer className={Styles.footerContainer}>
             <div className={Styles.ContainerDiv1}>
                 <div className={Styles.leftDiv}>
+
                     <div className={Styles.leftDivContent}>
                         <div className={Styles.logoContainer}>
                             <div className={Styles.logoDiv}>
@@ -32,7 +61,7 @@ const Footer = () => {
                                     <div className={Styles.contactDivImg}>
                                         <img className={Styles.contactImg} src={contact.imgPath} alt={contact.name} />
                                     </div>
-                                    <p>{contact.name}</p>
+                                    <a className={Styles.contactDivlink} href='#'>{contact.name}</a>
                                 </div>
                             )
                         })}
@@ -40,38 +69,9 @@ const Footer = () => {
                 </div>
 
                 <div className={Styles.rightDiv}>
-                    <div className={Styles.rightDivSection}>
-                        <h3 className={Styles.rightDivTitle}>Home</h3>
-                        <div className={Styles.rightDivText}>
-                            <a className={Styles.rightDivTextLink} href="#">Features</a>
-                            <a className={Styles.rightDivTextLink} href="#">Our Testimonials</a>
-                            <a className={Styles.rightDivTextLink} href="#">FAQ</a>
-                        </div>
-                    </div>
-                    <div className={Styles.rightDivSection}>
-                        <h3 className={Styles.rightDivTitle}>About Us</h3>
-                        <div className={Styles.rightDivText}>
-                            <a className={Styles.rightDivTextLink} href="#">Our Mission</a>
-                            <a className={Styles.rightDivTextLink} href="#">Our Vission</a>
-                            <a className={Styles.rightDivTextLink} href="#">Awards and Recognitions</a>
-                            <a className={Styles.rightDivTextLink} href="#">History</a>
-                            <a className={Styles.rightDivTextLink} href="#">Teachers</a>
-                        </div>
-                    </div>
-                    <div className={Styles.rightDivSection}>
-                        <h3 className={Styles.rightDivTitle}>Academics</h3>
-                        <div className={Styles.rightDivText}>
-                            <a className={Styles.rightDivTextLink} href="#">Special Features</a>
-                            <a className={Styles.rightDivTextLink} href="#">Gallery</a>
-                        </div>
-                    </div>
-                    <div className={Styles.rightDivSection}>
-                        <h3 className={Styles.rightDivTitle}>Contact Us</h3>
-                        <div className={Styles.rightDivText}>
-                            <a className={Styles.rightDivTextLink} href="#">Information</a>
-                            <a className={Styles.rightDivTextLink} href="#">Map & Direction</a>
-                        </div>
-                    </div>
+                    {links.map((section, index) => (
+                        <FooterSection key={index} sectionLinks={section} />
+                    ))}
                 </div>
             </div>
 
@@ -94,6 +94,8 @@ const Footer = () => {
                     })}
                 </div>
             </div>
+
+
             <div className={Styles.copyrightDiv}>
                 <p className={Styles.copyright}>Copyright © [2023] Little Learners Academy. All rights reserved.</p>
             </div>

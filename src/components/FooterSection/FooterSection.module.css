@@ -1,0 +1,52 @@
+.rightDivSection {
+    width: 22.7386%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightDivTitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-color3);
+    margin-bottom: 24px;
+    text-decoration: none;
+}
+
+.rightDivTitle:hover {
+    color: var(--bg4-color);
+}
+
+.rightDivText {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.rightDivTextLink {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-color5);
+    text-decoration: none;
+    display: block;
+}
+
+.rightDivTextLink:hover {
+    color: var(--bg4-color);
+}
+
+@media (max-width: 1440px) {
+    .rightDivTextLink {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .rightDivSection {
+        width: 44.9664%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+}

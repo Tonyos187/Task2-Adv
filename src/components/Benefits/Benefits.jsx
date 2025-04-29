@@ -1,5 +1,6 @@
 import Styles from './Benefits.module.css'
 import Title from '../Title/Title'
+import BenefitsCard from '../BenefitsCard/BenefitsCard';
 const Benefits = () => {
     const cards = [
         { img: "/assets/icons/Benefits/Union.svg", title: "Holistic Learning Approach", text: "Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education." },
@@ -15,15 +16,12 @@ const Benefits = () => {
             <Title btntext="Children Deserve Bright Future" title="Our Benefits" text="With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future." />
             <div className={Styles.benefitsContainer}>
                 {cards.map((card, index) => (
-                    <div className={Styles.benefitCard} key={index}>
-                        <div className={Styles.benefitCardImg}>
-                            <img src={card.img} alt={card.title} />
-                        </div>
-                        <div className={Styles.benefitCardContent}>
-                            <h3>{card.title}</h3>
-                            <p>{card.text}</p>
-                        </div>
-                    </div>
+                    <BenefitsCard
+                        key={index}
+                        img={card.img}
+                        title={card.title}
+                        text={card.text}
+                    />
                 ))}
             </div>
         </section>
