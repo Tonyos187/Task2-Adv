@@ -35,24 +35,6 @@
         .benefitsContainer {
             row-gap: 68px;
         }
-        .benefitCard {
-            width: 31.25%;
-            padding: 60px 40px 40px 40px;
-            box-shadow: 4px 4px 0px 2px #1E1E1E;
-        }
-        .benefitCardImg {
-            width: 56px;
-            height: 56px;
-        }
-        .benefitCardContent {
-            gap: 16px;
-        }
-        .benefitCardTitle {
-            font-size: 24px;
-        }
-        .benefitCardText {
-            font-size: 16px;
-        }
     }
     
     @media (max-width: 992px) {
@@ -63,16 +45,5 @@
         }
         .benefitsContainer {
             row-gap: 68px;
-        }
-        .benefitCard {
-            width: 100%;
-            padding: 50px 40px 30px 30px;
-            box-shadow: 4px 4px 0px 1px #1E1E1E;
-        }
-        .benefitCardTitle {
-            font-size: 22px;
-        }
-        .benefitCardText {
-            font-size: 16px;
         }
     }
